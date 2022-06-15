@@ -50,7 +50,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 span {
@@ -65,16 +65,24 @@ span {
 
 @keyframes anim {
   0% {
-    transform: rotate(0deg);
+    opacity: 1%;
+    /* transform: rotate(0deg); */
+    /* left: 220px; top: 120px; opacity: 90%; */
   }
   40% {
-    transform: rotate(30deg);
+    opacity: 25%;
+    /* transform: rotate(30deg); */
+    /* left: 196px; top: 120px; opacity: 70%; */
   }
   80% {
-    transform: rotate(254deg);
+    opacity: 66%;
+    /* transform: rotate(254deg); */
+    /* left: 270px; opacity: 40%; */
   }
   100% {
-    transform: rotate(360deg);
+    opacity: 100%;
+    /* transform: rotate(360deg); */
+    /* top: -202px; left: 270px; opacity: 1%; */
   }
 }
 span::before{
@@ -90,6 +98,8 @@ span::before{
   0px 0px 1px 4px rgba(0, 255, 255, .1),
   0px 0px 1px 6px rgba(0, 255, 255, .1);
 }
+
+
 
 span:nth-child(2)::before {
   box-shadow: 0px 0px 2px 5px rgba(0, 255, 0, .1),
@@ -130,4 +140,29 @@ span:nth-child(4) {
 
 span:nth-child(5) {
   animation-duration: .8s;
+}
+
+.box1 {
+  position: absolute;
+
+  height: 100px;
+  width: 100px;
+  border: 1px solid yellow;
+}
+
+.box2 {
+  position: relative;
+  
+  height: 50px;
+  width: 50px;
+  border: 1px solid red;
+}
+
+
+
+/* Testing containers for a stable ground to start with to properly align items inside */
+
+.main-container {
+  height: 100vh;
+  width: auto;
 }
