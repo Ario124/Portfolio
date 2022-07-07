@@ -30,11 +30,35 @@ h1 {
     min-height: 100vh;
     padding-bottom: 8rem;
 }
-.box{
-    padding: 25px;
-    width: 100%;
-    z-index: 5;
+
+.bg_filter {
+  background:rgba(0, 0, 0, 0.650);
+  animation-name: bg_filter;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
+
+@keyframes bg_filter {
+  20% {
+    background-color: rgba(0, 0, 0, 0.560);
+  }
+  40% {
+    background-color: rgba(0, 0, 0, 0.550);
+  }
+  60% {
+    background-color: rgba(0, 0, 0, 0.510);
+  }
+  80% {
+    background-color: rgba(0, 0, 0, 0.500);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.430);
+  }
+  
+}
+
+
 
 .colorall {
     position: absolute;
@@ -44,9 +68,10 @@ h1 {
 }
 
 .center {
+  margin-top: 3rem;
   position: absolute;
-  width: 600px;
-  height: 600px;
+  width: auto;
+  height: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,23 +91,23 @@ span {
 @keyframes anim {
   0% {
     opacity: 1%;
-    /* transform: rotate(0deg); */
-    /* left: 220px; top: 120px; opacity: 90%; */
+    transform: rotate(0deg);
+    left: 220px; top: 120px; opacity: 90%;
   }
   40% {
     opacity: 25%;
-    /* transform: rotate(30deg); */
-    /* left: 196px; top: 120px; opacity: 70%; */
+    transform: rotate(30deg);
+    left: 196px; top: 120px; opacity: 70%;
   }
   80% {
     opacity: 66%;
-    /* transform: rotate(254deg); */
-    /* left: 270px; opacity: 40%; */
+    transform: rotate(254deg);
+    left: 270px; opacity: 40%;
   }
   100% {
     opacity: 100%;
-    /* transform: rotate(360deg); */
-    /* top: -202px; left: 270px; opacity: 1%; */
+    transform: rotate(360deg);
+    top: -202px; left: 270px; opacity: 1%;
   }
 }
 span::before{
