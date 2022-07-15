@@ -32,7 +32,8 @@ h1 {
 }
 
 .bg_filter {
-  background:rgb(0, 0, 0);
+  height: 100vh;
+  background:rgb(0 0 0 / 65%);
   animation-name: bg_filter;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -193,7 +194,6 @@ span:nth-child(5) {
 
 .main-container {
   height: 100vh;
-  width: auto;
 }
 
 
