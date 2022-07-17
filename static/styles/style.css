@@ -68,7 +68,7 @@ h1 {
     background: #000000b8;
 }
 
-.center {
+.name_box {
   margin-top: 3rem;
   position: absolute;
   width: auto;
@@ -76,13 +76,38 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
+
+.buttons_container {
+  margin-top: 12rem;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid rgb(9, 68, 22); */
+  text-align: center;
+}
+
+
+.effects_container {
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid rgb(9, 68, 22); */
+  text-align: center;
+}
+
+
 
 span {
   position: absolute;
-  width: calc(100% - 100px * var(--size));
-  height: calc(100% - 100px * var(--size));
+  /* width: calc(100% - 100px * var(--size)); */
+  /* height: calc(100% - 100px * var(--size)); */
   animation: anim .8s infinite;
   /* border: 2px solid #0ff; */
   border-radius: 50%;
@@ -91,16 +116,13 @@ span {
 
 @keyframes anim {
   0% {
-    left: -1000%;
-  }
-  40% {
-
+    left: 1%;
   }
   50% {
-    left: 1000%;
+    left: 1%;
   }
   100% {
-    left: -1000%;
+    left: 100%;
   }
 }
 span::before{
@@ -217,13 +239,4 @@ span:nth-child(5) {
 }
 
 
-.buttons_container {
-  margin-top: 12rem;
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgb(9, 68, 22);
-  text-align: center;
-}
+
