@@ -35,7 +35,7 @@ h1 {
   height: 100vh;
   background:rgb(0 0 0 / 65%);
   animation-name: bg_filter;
-  animation-duration: 2s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
@@ -92,6 +92,7 @@ h1 {
 
 
 .effects_container {
+  /* background: rgba(0, 0, 0, 0.733); */
   height: 100vh;
   position: absolute;
   width: 100%;
@@ -102,7 +103,17 @@ h1 {
   text-align: center;
 }
 
-
+.filter_container {
+  /* background: rgba(0, 0, 0, 0.3); */
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid rgb(9, 68, 22); */
+  text-align: center;
+}
 
 span {
   position: absolute;
@@ -114,7 +125,43 @@ span {
 }
 
 
+
+
 @keyframes anim {
+  0% {
+    transform: rotate(45deg);
+    left: -50%;
+    transform: scale(0)
+  }
+  10% {
+    transform: rotate(45deg);
+    left: 16%;
+
+  }
+  30% {
+    transform: rotate(45deg);
+    transform: scale(2);
+    left: 30%;
+  }
+  50% {
+    transform: rotate(45deg);
+    left: 40%;
+
+  }
+  80% {
+    transform: rotate(45deg);
+    transform: scale(20);
+  }
+  100% {
+    transform: rotate(45deg);
+
+    left: 100%;
+  }
+}
+
+
+
+/* @keyframes anim {
   0% {
     left: 1%;
   }
@@ -124,7 +171,9 @@ span {
   100% {
     left: 100%;
   }
-}
+} */
+
+
 span::before{
   content: '';
   position: absolute;
@@ -167,11 +216,11 @@ span:nth-child(5)::before {
 
 
 span:nth-child(1) {
-  animation-duration: 3s;
+  animation-duration: 30s;
 }
 
 span:nth-child(2) {
-  animation-duration: 2s;
+  animation-duration: 20s;
   padding: 9px;
   animation-direction: alternate;
 }
@@ -179,16 +228,16 @@ span:nth-child(2) {
 span:nth-child(3) {
   padding: 19px;
   animation-direction:normal;
-  animation-delay: 350ms;
+  animation-duration: 17s;
 }
 span:nth-child(4) {
   padding: 29px;
-  animation-duration: 1s;
+  animation-duration: 10s;
   animation-direction: reverse;
 }
 span:nth-child(5) {
   padding: 39px;
-  animation-duration: .8s;
+  animation-duration: 18.8s;
   animation-direction: alternate-reverse;
 }
 
@@ -239,4 +288,25 @@ span:nth-child(5) {
 }
 
 
+/* Darker filter on top of bg image & below main content so animations can be under filter */
+.effects_container2 {
+  background: rgba(0, 0, 0, 0.644);
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid rgb(9, 68, 22); */
+  text-align: center;
+}
 
+.effects_container3 {
+  height: 50vh;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
