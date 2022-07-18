@@ -79,8 +79,19 @@ h1 {
   /* border: 1px solid red; */
 }
 
+.testo_box {
+  margin-top: 8rem;
+  position: absolute;
+  width: auto;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
 .buttons_container {
-  margin-top: 12rem;
+  margin-top: 15rem;
   position: absolute;
   width: 100%;
   display: flex;
@@ -129,33 +140,62 @@ span {
 
 @keyframes anim {
   0% {
-    transform: rotate(45deg);
-    left: -50%;
-    transform: scale(0)
+    left: 100%;
+    top: -50%;
+    transform: scale(0.3);
+    opacity: 0;
   }
   10% {
-    transform: rotate(45deg);
-    left: 16%;
+    left: 3%;
+    top: 20%;
+    transform: scale(0.7);
+    opacity: 1;
 
   }
   30% {
-    transform: rotate(45deg);
-    transform: scale(2);
-    left: 30%;
+    transform: scale(1.2);
+    left: 28%;
+    top: 30%;
+    opacity: 0;
   }
   50% {
-    transform: rotate(45deg);
-    left: 40%;
+    left: 70%;
+    top: 100%;
+    transform: scale(0.7);
+    opacity: 1;
 
+  }
+  60% {
+    left: 63%;
+    top: 44%;
+    transform: scale(1.2);
+    border-radius: 50%;
+    opacity: 0;
+  }
+  70% {
+    left: 13%;
+    top: -44%;
+    transform: scale(0.5);
+    opacity: 1;
   }
   80% {
-    transform: rotate(45deg);
-    transform: scale(20);
+    left: 13%;
+    top: -25%;
+    transform: scale(4);
+    border-radius: 50%;
+    opacity: 0;
+  }
+  90% {
+    left: 80%;
+    top: -10%;
+    transform: scale(0.3);
+    filter: contrast(130%);
+    opacity: 1;
   }
   100% {
-    transform: rotate(45deg);
-
-    left: 100%;
+    transform: scale(5);
+    top: 100%;
+    left: 150%;
   }
 }
 
@@ -183,45 +223,80 @@ span::before{
   left: -10px;
   background: var(--color);
   border-radius: 50%;
-  box-shadow: 0px 0px 1px 2px rgba(0, 255, 255, .1),
-  0px 0px 1px 4px rgba(0, 255, 255, .1),
-  0px 0px 1px 6px rgba(0, 255, 255, .1);
+  box-shadow: 0px 0px 2px 5px rgba(42, 92, 168, 0.123),
+  0px 0px 1px 4px rgba(42, 92, 168, 0.123),
+  0px 0px 1px 6px rgba(42, 92, 168, 0.123);
 }
 
 
 
 span:nth-child(2)::before {
-  box-shadow: 0px 0px 2px 5px rgba(0, 255, 0, .1),
-  0px 0px 1px 4px rgba(0, 255, 0, .1),
-  0px 0px 1px 6px rgba(0, 255, 0, .1);
+  box-shadow: 0px 0px 2px 5px rgba(42, 92, 168, 0.123),
+  0px 0px 1px 4px rgba(42, 92, 168, 0.123),
+  0px 0px 1px 6px rgba(42, 92, 168, 0.123);
 }
 
 span:nth-child(3)::before {
-  box-shadow: 0px 0px 2px 5px rgba(255, 0, 255, .1),
-  0px 0px 1px 4px rgba(255, 0, 255, .1),
-  0px 0px 1px 6px rgba(255, 0, 255, .1);
+  box-shadow: 0px 0px 2px 5px rgba(42, 92, 168, 0.123),
+  0px 0px 1px 4px rgba(42, 92, 168, 0.123),
+  0px 0px 1px 6px rgba(42, 92, 168, 0.123);
 }
 
 span:nth-child(4)::before {
-  box-shadow: 0px 0px 2px 5px rgba(255, 0, 0, .1),
-  0px 0px 1px 4px rgba(255, 0, 0, .1),
-  0px 0px 1px 6px rgba(255, 0, 0, .1);
+  box-shadow: 0px 0px 2px 5px rgba(42, 92, 168, 0.123),
+  0px 0px 1px 4px rgba(42, 92, 168, 0.123),
+  0px 0px 1px 6px rgba(42, 92, 168, 0.123);
 }
 
 span:nth-child(5)::before {
-  box-shadow: 0px 0px 2px 5px rgba(255, 255, 0, .1),
-  0px 0px 1px 4px rgba(255, 255, 0, .1),
-  0px 0px 1px 6px rgba(255, 255, 0, .1);
+  box-shadow: 0px 0px 2px 5px rgba(42, 92, 168, 0.123),
+  0px 0px 1px 4px rgba(42, 92, 168, 0.123),
+  0px 0px 1px 6px rgba(42, 92, 168, 0.123);
 }
 
 
+/* CYAN */
 span:nth-child(1) {
+  animation-duration: 15s;
+  padding: 8%;
+}
+
+/* GREEN */
+span:nth-child(2) {
+  animation-duration: 22s;
+  animation-direction: alternate;
+  padding: 19%;
+}
+
+/* PURPLE */
+span:nth-child(3) {
+  animation-duration: 18s;
+  animation-direction:alternate;
+  padding-top: 44%;
+  padding-left: 255%;
+}
+
+/* RED */
+span:nth-child(4) {
+  padding: 15%;
+  animation-duration: 17s;
+}
+
+/* YELLOW */
+span:nth-child(5) {
+  animation-direction: reverse;
+  animation-duration: 19s;
+}
+
+
+/* span:nth-child(1) {
   animation-duration: 30s;
+  padding: -33px;
 }
 
 span:nth-child(2) {
   animation-duration: 20s;
-  padding: 9px;
+  padding: 99px;
   animation-direction: alternate;
 }
 
@@ -232,14 +307,14 @@ span:nth-child(3) {
 }
 span:nth-child(4) {
   padding: 29px;
-  animation-duration: 10s;
+  animation-duration: 12s;
   animation-direction: reverse;
 }
 span:nth-child(5) {
-  padding: 39px;
+  padding: -69px;
   animation-duration: 18.8s;
   animation-direction: alternate-reverse;
-}
+} */
 
 
 
@@ -290,7 +365,7 @@ span:nth-child(5) {
 
 /* Darker filter on top of bg image & below main content so animations can be under filter */
 .effects_container2 {
-  background: rgba(0, 0, 0, 0.644);
+  background: rgba(0 0 0 / 77%);
   height: 100vh;
   position: fixed;
   width: 100%;
@@ -309,4 +384,78 @@ span:nth-child(5) {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+
+.scrolling-words-container {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.scrolling-words-box {
+  height: 3rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.scrolling-words-box ul li {
+  align-items: center;
+  justify-content: flex-end;
+  height: 3rem;
+  list-style: none;
+  background: rgba(34, 36, 133, 0.63);
+}
+
+
+
+
+
+/* Scroller styling */
+.scroller {
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  width: 10em;
+}
+.scroller > .scrolling-words-box > ul {
+  position: absolute;
+  top: 0;
+  animation: slide 14s infinite;
+  font-weight: bold;
+  
+}
+
+
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  10% {
+    top: -1.7em;
+  }
+  20% {
+    top: -3.1em;
+  }
+  30% {
+    top: -4.6em;
+  }
+  40% {
+    top: -6.2em;
+  }
+  50% {
+    top: -7.6em;
+  }
+  60% {
+    top: -9.2em;
+  }
+  70% {
+
+  }
+  80% {
+  }
+  100% {
+  }
 }
