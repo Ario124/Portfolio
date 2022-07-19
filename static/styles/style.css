@@ -10,7 +10,7 @@
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
 }
 
 .color-overlay {
@@ -49,6 +49,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Ibarra Real Nova', serif;
 }
 
 
@@ -114,10 +115,11 @@ h1 {
 
 
 .scroll_text_bg {
-  background: rgb(36 58 80 / 77%);
-  height: 100vh;
+  background: rgb(7 65 122 / 77%);
+  height: 10vh;
   position: absolute;
   width: 100%;
+  filter: blur(142px);
 }
 
 
@@ -277,6 +279,9 @@ span:nth-child(5) {
   height: 3rem;
   width: 100%;
   list-style: none;
+  font-family: 'Poppins', sans-serif;
+  color: #04b6a4;
+  /* font-size: 1.8rem; */
   /* background: rgba(34, 36, 133, 0.63); */
 }
 
@@ -312,9 +317,11 @@ span:nth-child(5) {
 .scroller > .scrolling-words-box > ul {
   position: absolute;
   top: 0;
-  animation: slide 14s infinite;
+  animation: slide 33s infinite alternate ease-in-out;
+  animation-delay: 1s;
   
 }
+
 
 
 @keyframes slide {
@@ -322,22 +329,22 @@ span:nth-child(5) {
     top: 0;
   }
   10% {
-    top: -1.7em;
+    top: -1.5em;
   }
   20% {
-    top: -3.1em;
+    top: -3.0em;
   }
   30% {
-    top: -4.6em;
+    top: -4.5em;
   }
   40% {
-    top: -6.2em;
+    top: -6.0em;
   }
   50% {
-    top: -7.6em;
+    top: -7.4em;
   }
   60% {
-    top: -9.2em;
+    top: -9.0em;
   }
   70% {
 
