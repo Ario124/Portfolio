@@ -2,21 +2,6 @@
 {%  load static %}
 {% block content %}
 
-
-
-<!-- <div class="container" style="border:1px solid rgb(0, 81, 255)";>
-  <div class="row">
-    <div class="col-sm-6 col-md-4" style="border:1px solid darkorange";>
-      <h1>hello</h1>
-    </div>
-    <div class="col-sm-6 col-md-4" style="border:1px solid darkorange";>
-      <h1>hello</h1>
-    </div>
-    <div class="col-sm-6 col-md-4" style="border:1px solid darkorange";>
-      <h1>hello</h1>
-    </div>
-  </div>
-</div> -->
 <div class="">
     <div class="">
 
@@ -50,72 +35,25 @@
                 </div>
                 </div>
 
-                <div class="testo_box">
-                <!-- Scroller Start -->
-                
-                <div class="scroller scrolling-words-container">
-                  <div class="text-center scrolling-words-box">
-                    <ul>
-                      <li style="color: #ea4335">Python</li>
-                      <li style="color: #122d58">Django</li>
-                      <li style="color: #34a853">SQL</li>
-                      <li style="color: #fbbc04">Scripts</li>
-                      <li style="color: #ea3571">CSS3</li>
-                      <li style="color: #355fea">NEW</li>
-                      <li style="color: #0ccc3c">OK</li>
-                    </ul>
+                <div class="scroll_text_container">
+                  <div class="scroller scrolling-words-container mt-2">
+                    <div class="text-center scrolling-words-box">
+                      <ul>
+                        {% for item in item_list %}
+                        <li class="{% cycle 'word_box_color' 'word_box_color2' %}">{{item}}</li>
+                        {% endfor %}
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                
-                <!-- Scroller End -->
-                </div>
-
-
-              <!-- Buttons container -->
-
-              <div class="container buttons_container">
-                <div class="row">
-                  <div class="col-lg-4 pt-4" ><button type="button" class="btn btn-outline-warning">Projects</button></div>
-                  <div class="col-lg-4 pt-4" ><button type="button" class="btn btn-outline-warning">About</button></div>
-                  <div class="col-lg-4 pt-4" ><button type="button" class="btn btn-outline-warning">Resume</button></div>
-                </div>
-              </div>
-
-
-              
-              <!-- <div class="container effects_container" style="border:1px solid rgb(236, 240, 25)";>
-                <div class="row" style="border:1px solid rgb(13, 70, 97)";>
-                  <div class="col" style="border:1px solid rgb(138, 44, 56)";>
-                  <h1>hello</h1>
-
-                  <span style="--size:2; --color:#0ff;"></span>
-                  <span style="--size:3; --color:#0f0;"></span>
-                  <span style="--size:4; --color:#f0f;"></span>
-                  <span style="--size:5; --color:#ff0000;"></span>
-                  <span style="--size:6; --color:#ffff00;"></span>
-
-                  </div>
-                </div>
-                <div class="container filter_container" style="border:1px solid rgb(18, 55, 70)";></div>
-
-
-              </div> -->
-
-
-             <!-- <div class="cool_effects">
-              <div class="row align-items-center justify-content-center">
-                  <div class="col-12">
-                    <span style="--size:2; --color:#0ff;"></span>
-                    <span style="--size:3; --color:#0f0;"></span>
-                    <span style="--size:4; --color:#f0f;"></span>
-                    <span style="--size:5; --color:#ff0000;"></span>
-                    <span style="--size:6; --color:#ffff00;"></span>
-                  </div>
-              </div>
-           </div> -->
-
-
             </div>
+                    <!-- Buttons container -->
+                  <div class="container buttons_container">
+                    <div class="row">
+                      <div class="col-lg-4 pt-4" ><button type="button" class="btn btn-outline-warning">Projects</button></div>
+                      <div class="col-lg-4 pt-4" ><button type="button" class="btn btn-outline-warning">About</button></div>
+                      <div class="col-lg-4 pt-4" ><button type="button" class="btn btn-outline-warning">Resume</button></div>
+                    </div>
+                  </div>
           </div>
 
 
