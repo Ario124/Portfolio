@@ -9,9 +9,9 @@
           
           <div class="d-flex justify-content-center align-items-center">
 
-            <div class="container effects_container2" style="border:1px solid rgb(236, 240, 25)";>
-            <div class="container effects_container3 align-items-center" style="border:1px solid rgb(13, 70, 97)";>
-              <div class="col" style="border:1px solid rgb(138, 44, 56)";>
+            <div class="effects_container2">
+            <div class="container effects_container3 align-items-center">
+              <div class="col">
               <span style="--size:2; --color:rgb(65, 94, 148);"></span>
               <span style="--size:3; --color:rgb(65, 94, 148);"></span>
               <span style="--size:4; --color:rgb(65, 94, 148);"></span>
@@ -24,7 +24,7 @@
             </div>
 
             <div class="main-container">
-              <div class="bg_filter col d-flex justify-content-center" style="border:1px solid rgb(236, 240, 25)";>
+              <div class="bg_filter col d-flex justify-content-center">
                 <!-- Name container -->
                 <div class="name_box">
                   <div class="d-flex align-items-center justify-content-center">
@@ -34,17 +34,23 @@
                   </div>
                 </div>
                 </div>
-
+                
                 <div class="scroll_text_container">
                   <div class="scroller scrolling-words-container mt-2">
+                    <div class="scroll_text_bg">
+                      <!-- <h1 class="text-primary">hello</h1> -->
+                    </div>
                     <div class="text-center scrolling-words-box">
                       <ul>
                         {% for item in item_list %}
-                        <li class="{% cycle 'word_box_color' 'word_box_color2' %}">{{item}}</li>
+                        <li class="">{{item}}</li>
                         {% endfor %}
                       </ul>
                     </div>
                   </div>
+                  
+
+
             </div>
                     <!-- Buttons container -->
                   <div class="container buttons_container">
@@ -54,8 +60,9 @@
                       <div class="col-lg-4 pt-4" ><button type="button" class="btn btn-outline-warning">Resume</button></div>
                     </div>
                   </div>
-          </div>
 
+
+          </div>
 
         </div>
     </div>

@@ -33,7 +33,7 @@ h1 {
 
 .bg_filter {
   height: 100vh;
-  background:rgb(0 0 0 / 65%);
+  /* background:rgb(0 0 0 / 65%); */
   animation-name: bg_filter;
   animation-duration: 20s;
   animation-iteration-count: infinite;
@@ -52,13 +52,18 @@ h1 {
 }
 
 
+
+
+/*
+    //// CONTAINERS START////
+*/
+
 .scroll_text_container {
   margin-top: 11rem;
 }
 
-
 .buttons_container {
-  margin-top: 15rem;
+  margin-top: 20rem;
   position: absolute;
   width: 100%;
   display: flex;
@@ -66,6 +71,58 @@ h1 {
   align-items: center;
   text-align: center;
 }
+
+.effects_container2 {
+  background: rgba(0 0 0 / 77%);
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid rgb(9, 68, 22); */
+  text-align: center;
+}
+
+.effects_container3 {
+  height: 50vh;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.scrolling-words-container {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.main-container {
+  height: 100vh;
+}
+
+
+/*
+    //// CONTAINERS END ////
+*/
+
+
+
+.scroll_text_bg {
+  background: rgb(36 58 80 / 77%);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+
+
+
+
 
 
 span {
@@ -214,58 +271,6 @@ span:nth-child(5) {
 }
 
 
-
-/* Testing containers for a stable ground to start with to properly align items inside */
-
-.main-container {
-  height: 100vh;
-}
-
-
-/* Darker filter on top of bg image & below main content so animations can be under filter */
-.effects_container2 {
-  background: rgba(0 0 0 / 77%);
-  height: 100vh;
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border: 1px solid rgb(9, 68, 22); */
-  text-align: center;
-}
-
-.effects_container3 {
-  height: 50vh;
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-
-.scrolling-words-container {
-  display: flex;
-  align-items: center;
-  font-size: 2rem;
-  font-weight: 600;
-}
-.scrolling-words-box {
-  height: 3rem;
-  margin: auto;
-  margin-right: -20%;
-  overflow: hidden;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-
-
-
 .scrolling-words-box ul li {
   align-items: center;
   justify-content: flex-end;
@@ -280,13 +285,23 @@ span:nth-child(5) {
   background: red;
 }
 .word_box_color2 {
-  background: rgba(12, 121, 21, 0.589);
+  background: rgba(10, 22, 133, 0.664);
+  /* filter: blur(35px); */
 }
 
 
 
+.scrolling-words-box {
+  height: 3rem;
+  margin: auto;
+  margin-right: -20%;
+  overflow: hidden;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
 
-/* Scroller styling */
 .scroller {
   height: 1.2em;
   line-height: 1.2em;
@@ -298,7 +313,6 @@ span:nth-child(5) {
   position: absolute;
   top: 0;
   animation: slide 14s infinite;
-  /* font-weight: bold; */
   
 }
 
